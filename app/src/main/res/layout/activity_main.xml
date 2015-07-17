@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    style="@style/main_view">
+
+    <TextView
+        style="@style/title_text"
+        android:text="@string/title"
+        android:id="@+id/title_text" />
+
+    <LinearLayout
+        style="@style/button_layout"
+        android:layout_below="@+id/title_text">
+
+        <Button
+            android:text="@string/spotify_streamer"
+            android:onClick="launchSpotify"
+            android:id="@+id/spotify_streamer"
+            style="@style/button" />
+
+        <Button
+            android:text="@string/scores_app"
+            android:onClick="launchScoresApp"
+            android:id="@+id/scores_app"
+            style="@style/button" />
+
+        <Button
+            android:text="@string/library_app"
+            android:onClick="launchLibraryApp"
+            android:id="@+id/library_app"
+            style="@style/button" />
+
+        <Button
+            android:text="@string/build_it_bigger"
+            android:onClick="launchBuildItBigger"
+            android:id="@+id/build_it_bigger"
+            style="@style/button" />
+
+        <Button
+            android:text="@string/xyz_reader"
+            android:onClick="launchXYZReader"
+            android:id="@+id/xyz_reader"
+            style="@style/button" />
+
+        <Button
+            android:text="@string/capstone"
+            android:onClick="launchCapstone"
+            android:id="@+id/capstone"
+            style="@style/capstone_button" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="capstone_background">#fff44336</color>
+    <color name="project_background">#ffff9800</color>
+    <color name="capstone_text">#ffe8f5e9</color>
+    <color name="title_text">#ff1a237e</color>
+    <color name="main_background">#ffe3f2fd</color>
+
+    <style name="button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:backgroundTint">@color/project_background</item>
+    </style>
+
+    <style name="capstone_button" parent="button">
+        <item name="android:backgroundTint">@color/capstone_background</item>
+        <item name="android:textColor">@color/capstone_text</item>
+    </style>
+
+    <style name="title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/title_text</item>
+    </style>
+
+    <style name="button_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="main_view">
+        <item name="android:background">@color/main_background</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+</resources>
