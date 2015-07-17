@@ -24,6 +24,8 @@
             android:id="@+id/scores_app"
             style="@style/button" />
 
+
+
         <Button
             android:text="@string/library_app"
             android:onClick="launchLibraryApp"
