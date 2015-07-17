@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="capstone_background">#fff44336</color>
-    <color name="project_background">#ffff9800</color>
-    <color name="capstone_text">#ffe8f5e9</color>
-    <color name="title_text">#ff1a237e</color>
-    <color name="main_background">#ffe3f2fd</color>
-
     <style name="button">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -31,6 +25,12 @@
         <item name="android:orientation">vertical</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="scroll_view">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_centerHorizontal">true</item>
     </style>
 

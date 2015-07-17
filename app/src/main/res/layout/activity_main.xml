@@ -8,48 +8,53 @@
         android:text="@string/title"
         android:id="@+id/title_text" />
 
-    <LinearLayout
-        style="@style/button_layout"
+    <ScrollView
+        style="@style/scroll_view"
+        android:id="@+id/scrollView"
         android:layout_below="@+id/title_text">
 
-        <Button
-            android:text="@string/spotify_streamer"
-            android:onClick="launchSpotify"
-            android:id="@+id/spotify_streamer"
-            style="@style/button" />
+        <LinearLayout
+            style="@style/button_layout">
 
-        <Button
-            android:text="@string/scores_app"
-            android:onClick="launchScoresApp"
-            android:id="@+id/scores_app"
-            style="@style/button" />
+            <Button
+                android:text="@string/spotify_streamer"
+                android:onClick="clickOnButton"
+                android:id="@+id/spotify_streamer"
+                style="@style/button" />
+
+            <Button
+                android:text="@string/scores_app"
+                android:onClick="clickOnButton"
+                android:id="@+id/scores_app"
+                style="@style/button" />
 
 
 
-        <Button
-            android:text="@string/library_app"
-            android:onClick="launchLibraryApp"
-            android:id="@+id/library_app"
-            style="@style/button" />
+            <Button
+                android:text="@string/library_app"
+                android:onClick="clickOnButton"
+                android:id="@+id/library_app"
+                style="@style/button" />
 
-        <Button
-            android:text="@string/build_it_bigger"
-            android:onClick="launchBuildItBigger"
-            android:id="@+id/build_it_bigger"
-            style="@style/button" />
+            <Button
+                android:text="@string/build_it_bigger"
+                android:onClick="clickOnButton"
+                android:id="@+id/build_it_bigger"
+                style="@style/button" />
 
-        <Button
-            android:text="@string/xyz_reader"
-            android:onClick="launchXYZReader"
-            android:id="@+id/xyz_reader"
-            style="@style/button" />
+            <Button
+                android:text="@string/xyz_reader"
+                android:onClick="clickOnButton"
+                android:id="@+id/xyz_reader"
+                style="@style/button" />
 
-        <Button
-            android:text="@string/capstone"
-            android:onClick="launchCapstone"
-            android:id="@+id/capstone"
-            style="@style/capstone_button" />
+            <Button
+                android:text="@string/capstone"
+                android:onClick="clickOnButton"
+                android:id="@+id/capstone"
+                style="@style/capstone_button" />
 
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

@@ -5,6 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 
@@ -38,27 +39,13 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void launchSpotify(View view) {
-        Toast.makeText(getApplicationContext(), R.string.spotify_toast, Toast.LENGTH_LONG).show();
+    public void clickOnButton(View view) {
+        Button button = (Button) view;
+        displayToast(button.getText());
     }
 
-    public void launchScoresApp(View view) {
-        Toast.makeText(getApplicationContext(), R.string.scores_toast, Toast.LENGTH_LONG).show();
-    }
-
-    public void launchLibraryApp(View view) {
-        Toast.makeText(getApplicationContext(), R.string.library_toast, Toast.LENGTH_LONG).show();
-    }
-
-    public void launchBuildItBigger(View view) {
-        Toast.makeText(getApplicationContext(), R.string.build_it_bigger_toast, Toast.LENGTH_LONG).show();
-    }
-
-    public void launchXYZReader(View view) {
-        Toast.makeText(this, R.string.xyz_reader_toast, Toast.LENGTH_LONG).show();
-    }
-
-    public void launchCapstone(View view) {
-        Toast.makeText(this, R.string.capstone_toast, Toast.LENGTH_LONG).show();
+    private void displayToast(CharSequence message) {
+        String msg = String.format(getString(R.string.toast_message), message);
+        Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
     }
 }
